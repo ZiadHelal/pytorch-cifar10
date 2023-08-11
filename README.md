@@ -1,9 +1,9 @@
 
 # PyTorch CIFAR-10
 
-![Accuracy Results](https://static.packt-cdn.com/products/9781838823412/graphics/Images/B14761_04_12.png)
+![CIFAR-10 overview image](https://static.packt-cdn.com/products/9781838823412/graphics/Images/B14761_04_12.png)
 
-A PyTorch implementation for training a medium sized convolutional neural network on CIFAR-10 dataset. CIFAR-10 dataset is a subset of the 80 million tiny image dataset (taken down). Each image in CIFAR-10 dataset has a dimension of 32x32. There are 60000 coloured images in the dataset. 50,000 images form the training data and the remaining 10,000 images form the test data. The training data is divided into 32 batches. CIFAR-10 has 10 categories. Each category having 6000 images.
+A PyTorch implementation for training a medium sized convolutional neural network on CIFAR-10 dataset. CIFAR-10 dataset is a subset of the 80 million tiny image dataset (taken down). Each image in CIFAR-10 dataset has a dimension of 32x32. There are 60000 coloured images in the dataset. 50,000 images for the training data (of which 5,000 is used as a validation set) and the remaining 10,000 images for the test data. The training data is divided into 32 batches. CIFAR-10 has 10 categories. Each category having 6000 images.
 ## Model Architecture
 
 The model consists of eight Convolutional Layers (with ReLU activation) and each one followed by BatchNormalization to speed up training and ensure stability. 
@@ -24,11 +24,11 @@ Final output is calculated on Log Softmax layer to ensure further stability rath
 7. Including several graphs for loss, accuracy, and accuracy for each class in the dataset.
 ## Training & Testing
 
-The model was trained in 120 epochs (120 times looping over the entire training set).
+The model was trained in 150 epochs (150 times looping over the entire training set).
 
-It took 1hr 42mins using Google Colab Standard GPUs which are typically NVIDIA T4 Tensor Core.
+It took 1hr 32mins using Google Colab Standard GPUs which are typically NVIDIA T4 Tensor Core.
 
-The model acheived an accuracy of 88.24% on the test set which is good for this medium sized model.
+The model acheived an accuracy of 88.44% on the test set which is good for this medium sized model.
 ## Requirements
 
 ```bash
